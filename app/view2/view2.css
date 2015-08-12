@@ -1,4 +1,66 @@
-.timer{
-    background-color: cornflowerblue;
-    font-size: 5rem;
+.timerClock{
+    /*background-color: blue;*/
+    font-size: 12rem;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.timerText{
+    /*background-color: cornflowerblue;*/
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    color: #292321;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 4px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+}
+
+input[type="radio"] + label span {
+    background-color: #ffff00;
+    background: url("unchecked.png") ;
+    background-size: 32px 32px;
+
+}
+
+input[type="radio"]:checked + label span {
+    background-color: #F5F5FF;
+    background: url("checked.png") ;
+    background-size: 32px 32px;
+
+
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+.klasa{
+    background: #FFFFFF;
 }
