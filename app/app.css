@@ -1,4 +1,8 @@
 /* app css stylesheet */
+body {
+  background-image: url("img/tlo.png");
+  font-family: 'Open Sans', sans-serif;
+}
 
 .menu {
   list-style: none;
