@@ -1,8 +1,20 @@
+body{
+        height: 100%;
+}
+
+.container{
+    margin: auto 0;
+}
+
+
 .timerClock{
     /*background-color: blue;*/
     font-size: 12rem;
     text-align: center;
     font-weight: 100;
+    line-height: 10rem;
+    /*margin-top: 8rem;*/
+    /* a może  vw  wykorzystac ?? */
 
 }
 
@@ -23,9 +35,11 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label {
-    color: #292321;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background: #FFF;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
 }
 
 input[type="radio"] + label span {
@@ -35,8 +49,7 @@ input[type="radio"] + label span {
     margin: 4px 4px 0 0;
     vertical-align: middle;
     cursor: pointer;
-    /*-moz-border-radius: 50%;*/
-    /*border-radius: 50%;*/
+
 }
 
 input[type="radio"] + label span {
@@ -61,6 +74,9 @@ input[type="radio"]:checked + label span {
     -moz-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
 }
-.klasa{
-    background: #FFFFFF;
+.klasaRadio{
+    /*background: #FFF;*/
+    float: right;
+    padding: 1rem;
+
 }

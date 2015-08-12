@@ -1,11 +1,50 @@
+#h1Add{
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+#nameRest, #selectRest{
+    width: 100%;
+    line-height: 6rem;
+    font-size: 2rem;
+    color: #000;
+    /*background-color: rgba(205, 219, 194, 0.2);*/
+    background-color: #FFF;
+    margin-bottom: 3rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+#selectRest select{
+    width: 100%;
+    color: #000;
+}
+
+
+#selectOptRest {
+	color: blue;
+    text-align: center;
+}
+
 #btnAddRest{
     float: right;
-}
-#nameRest{
-    width: 100%;
     line-height: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
+    border-radius: 0;
 }
 
 
+::-webkit-input-placeholder {
+   color: #A9A9A9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #A9A9A9;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #A9A9A9;  
+}
+
+:-ms-input-placeholder {  
+   color: #A9A9A9;  
+}
 

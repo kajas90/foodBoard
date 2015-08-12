@@ -9,15 +9,16 @@ angular.module('myApp.view3', ['ngRoute'])
   });
 }])
 
-.controller('View3Ctrl', [function() {
+.controller('View3Ctrl',  function MyController($scope) {
+       $scope.restauracje = [
+            "Wege", "Burger", "Pizza", "Fastfood",
+           "Azjatyckie"];
+       $scope.wybrana = "";
+       $scope.objekt = {
+        'name' : 'maciej',
+        'imie' : 'łysy'
+       };
+   });
 
-}]);
 
 
-
-function MyController($scope) {
-  $scope.endDays = [
-    "Monday", "Tuesday", "Wednesday",
-    "Thursday", "Friday", "Saturday", "Sunday"];
-  $scope.endDay = 4;
-}
