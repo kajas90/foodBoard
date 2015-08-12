@@ -1,11 +1,17 @@
 /* app css stylesheet */
 html, body {
+
   background: url("img/tlo.png") no-repeat center center fixed;
+  min-height: 100%;
   background-size: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #F5F5F5;
   margin:0 3em;
 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .menu {

@@ -1,14 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="view3/view3.css">
+<link rel="stylesheet" href="view3/view3.css">
 
-    <meta charset="UTF-8">
-    <title></title>
-</head>
 <body>
-<p>COkolwiek</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5 col-md-5"></div>
+        <div class="col-lg-6 col-md-6">
+            <div class="row">
+                <h1>Add new restaurant</h1>
+            </div>
+            <div class="row">
+                <input type="text" id="nameRest" placeholder="name of restaurant" />
+            </div>
+            <div class="row">
+
+
+                <!--<div class="dropdown">-->
+                    <!--<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--select type of restaurant-->
+                        <!--<span class="caret"></span>-->
+                    <!--</button>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dLabel">-->
+                        <!--<li>Burgery</li>-->
+                        <!--<li>Pizza</li>-->
+                        <!--<li>Azjatyckie</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <button type="button" id="btnAddRest" class="btn btn-primary " data-toggle="button" aria-pressed="false" autocomplete="off" >
+                    add new restaurant
+                </button>
+            </div>
+
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+
+    </div>
+</div>
+
+
+    <div ng-controller="MyController">
+        <label for="lastDayOfWeek">Example of preselecting Angular drop-down:</label>
+        <select id="lastDayOfWeek" ng-model="endDay"
+                ng-options="endDays.indexOf(i) as i for i in endDays">
+        </select>
+    </div>
+
 
 
 </body>
 </html>
+
+
+<script>
+
+//    function MyController($scope) {
+//        $scope.endDays = [
+//            "Monday", "Tuesday", "Wednesday",
+//            "Thursday", "Friday", "Saturday", "Sunday"];
+//        $scope.endDay = 4;
+//    }
+</script>

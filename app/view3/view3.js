@@ -12,3 +12,12 @@ angular.module('myApp.view3', ['ngRoute'])
 .controller('View3Ctrl', [function() {
 
 }]);
+
+
+
+function MyController($scope) {
+  $scope.endDays = [
+    "Monday", "Tuesday", "Wednesday",
+    "Thursday", "Friday", "Saturday", "Sunday"];
+  $scope.endDay = 4;
+}
