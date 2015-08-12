@@ -1,7 +1,10 @@
 /* app css stylesheet */
-body {
-  background-image: url("img/tlo.png");
+html, body {
+  background: url("img/tlo.png") no-repeat center center fixed;
+  background-size: 100%;
   font-family: 'Open Sans', sans-serif;
+  color: #F5F5F5;
+
 }
 
 .menu {
