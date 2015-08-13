@@ -1,0 +1,56 @@
+body{
+        height: 100%;
+}
+
+.container{
+    margin: auto 0;
+}
+
+
+.timerClock{
+    /*background-color: blue;*/
+    font-size: 12rem;
+    text-align: center;
+    font-weight: 100;
+    line-height: 10rem;
+    /*margin-top: 8rem;*/
+    /* a może  vw  wykorzystac ?? */
+
+}
+
+.timerText{
+    /*background-color: cornflowerblue;*/
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .timerClock {
+        font-size: 10rem;
+        padding: 0;
+        margin: 0;
+    }
+    .timerText{
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .timerClock {
+        font-size: 8rem;
+        padding: 0;
+        margin: 0;
+    }
+    .timerText{
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+
+    }
+}

@@ -5,20 +5,20 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /restaurantList when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch("/restaurantList");
   });
 
 
-  describe('view1', function() {
+  describe('restaurantList', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/restaurantList');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render restaurantList when user navigates to /restaurantList', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });
@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('timer', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/timer');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render timer when user navigates to /timer', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });
@@ -41,14 +41,14 @@ describe('my app', function() {
   });
 
 
-  describe('view3', function() {
+  describe('restaurantAdd', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view3');
+      browser.get('index.html#/restaurantAdd');
     });
 
 
-    it('should render view3 when user navigates to /view3', function() {
+    it('should render restaurantAdd when user navigates to /restaurantAdd', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 3/);
     });

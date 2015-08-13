@@ -3,11 +3,11 @@
 angular.module('myApp', [
   'ui.bootstrap',
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.view3',
+  'myApp.restaurantList',
+  'myApp.timer',
+  'myApp.restaurantAdd',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/restaurantList'});
 }]);

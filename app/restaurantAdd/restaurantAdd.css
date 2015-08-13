@@ -15,14 +15,12 @@
 }
 #selectRest select{
     width: 100%;
-    color: #000;
-}
-
-
-#selectOptRest {
-	color: blue;
+    color: #A9A9A9;
+    background-color: #FFF;
     text-align: center;
+    border-style: none;
 }
+
 
 #btnAddRest{
     float: right;
