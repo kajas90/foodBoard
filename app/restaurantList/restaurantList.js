@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.restaurantList', ['ngRoute'])
+angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/restaurantList', {
@@ -9,7 +9,38 @@ angular.module('myApp.restaurantList', ['ngRoute'])
   });
 }])
 
-.controller('restaurantListCtrl', [function() {
+.controller('restaurantListCtrl', function($rootScope, $scope, $location, $routeParams) {
+  $scope.variable = "Our tekst";
+  $scope.progress = 65;
 
-}]);
+  $scope.showText = function() {
+    alert($scope.variable);
+  }
 
+  $scope.oneAtATime = true;
+
+  $scope.groups = [
+    {
+      title: 'jakisTytul',
+      content: 'LOremImpusumeusdbgaid fsaISJFn KSFJKN SFJKKN SDKFJSDN DSK NKSDNFJSDN FSO',
+      logo : 'LOGO',
+      name : 'u Skrzypka',
+      type : 'Pizzeria'
+    }
+  ];
+
+  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+
+  $scope.addItem = function() {
+    var newItemNo = $scope.items.length + 1;
+    $scope.items.push('Item ' + newItemNo);
+  };
+
+  $scope.status = {
+    isFirstOpen: true,
+    isFirstDisabled: false
+  };
+
+
+
+});

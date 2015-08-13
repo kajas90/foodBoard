@@ -1,6 +1,8 @@
 #h1Add{
 	font-size: 3rem;
 	margin-bottom: 3rem;
+    margin-top: 10rem;
+
 }
 #nameRest, #selectRest{
     width: 100%;
@@ -19,6 +21,7 @@
     background-color: #FFF;
     text-align: center;
     border-style: none;
+    outline: none;
 }
 
 
@@ -46,3 +49,8 @@
    color: #A9A9A9;  
 }
 
+@media only screen and (max-width: 768px) {
+    #h1Add{
+        margin-top: 2rem;
+    }
+}

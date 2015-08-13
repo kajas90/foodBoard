@@ -1,8 +1,3 @@
-<html>
-<head>
-
-</head>
-<body>
 
 <div class="header">
     <div class="row">
@@ -11,68 +6,38 @@
     </div>
 </div>
 
-<div class="table">
-    <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">Logo</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">u skrzypka</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">pizzeria</div>
-        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-            <div class="checkbox">
-                <div class="checked"></div>
-                <div class="glyphicon glyphicon-ok hash"></div>
-            </div>
-        </div>
+<div class="blok" ng-controller="restaurantListCtrl">
+
+    <div class="table" ng-repeat="group in groups">
+        <accordion close-others="oneAtATime">
+            <accordion-group>
+                <accordion-heading>
+                    <div class="row" >
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">{{group.type}}</div>
+                        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <div class="checkbox">
+                                <div class="checked"></div>
+                                <div class="glyphicon glyphicon-ok hash"></div>
+                            </div>
+                        </div>
+                    </div>
+                </accordion-heading>
+
+                {{group.content}}
+
+            </accordion-group>
+        </accordion>
     </div>
-    <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">Logo</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">u skrzypka</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">pizzeria</div>
-        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-            <div class="checkbox">
-                <div class="checked"></div>
-                <div class="glyphicon glyphicon-ok hash"></div>
-
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">Logo</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">u skrzypka</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">pizzeria</div>
-        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-            <div class="checkbox">
-                <div class="checked"></div>
-                <div class="glyphicon glyphicon-ok hash"></div>
-
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">Logo</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">u skrzypka</div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">pizzeria</div>
-        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-            <div class="checkbox">
-                <div class="checked"></div>
-                <div class="glyphicon glyphicon-ok hash"></div>
-
-            </div>
-
-        </div>
-    </div>
-
 
 </div>
+
+
 <div class="add">
     <button type="button" class="btn btn-lg btn-default">add new restaurant</button>
 </div>
 
 
-
-</body>
-</html>
 

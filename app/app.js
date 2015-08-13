@@ -6,7 +6,7 @@ angular.module('myApp', [
   'ui.bootstrap',
   'myApp.login',
   'myApp.restaurantList',
-  'myApp.timer',
+  'myApp.myTimer',
   'myApp.restaurantAdd',
   'myApp.version'
 ]).

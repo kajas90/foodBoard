@@ -1,6 +1,6 @@
 <div class="login" ng-controller="LoginController">
   <div class="span2" ng-click="showText()">{{variable}}  </div>
-  
+
   <p>
     <button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
     <button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
@@ -12,6 +12,7 @@
       Open only one at a time
     </label>
   </div>
+
   <accordion close-others="oneAtATime">
     <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
       This content is straight in the template.

@@ -41,12 +41,7 @@ angular.module('myApp.login', ['ngRoute','ui.bootstrap'])
       isFirstOpen: true,
       isFirstDisabled: false
     };
-    
-    
-    $scope.status = {
-      isFirstOpen: true,
-      isFirstDisabled: false
-    };
+
 
 
 });
