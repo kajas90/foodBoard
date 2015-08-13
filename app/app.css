@@ -45,8 +45,9 @@ html, body {
 .header{
   height:10em;
   position: relative;
-  border-bottom: 1px solid;
-
+}
+.table{
+  border-top: 1px solid;
 }
 #choose{
   position: absolute;
@@ -93,6 +94,10 @@ html, body {
 }
 .add button{
   float: right;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus{
+  outline:none;
+  box-shadow:none;
 }
 
 
