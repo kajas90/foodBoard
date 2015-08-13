@@ -18,32 +18,3 @@ var myApp3 = angular.module('myApp.restaurantAdd', ['ngRoute'])
    });
 
 
-
-angular.module('ui.bootstrap',['ngRoute'])
-
-    .controller('AccordionDemoCtrl', function ($scope) {
-  $scope.oneAtATime = true;
-
-  $scope.groups = [
-    {
-      title: 'headerek1',
-      content: 'content 1'
-    },
-    {
-      title: 'Header - 2',
-      content: 'Cont - 2'
-    }
-  ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
-
-  $scope.status = {
-    isFirstOpen: true,
-    isFirstDisabled: false
-  };
-});
