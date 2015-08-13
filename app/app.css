@@ -45,6 +45,7 @@ html, body {
 .header{
   height:10em;
   position: relative;
+  border-bottom: 1px solid;
 
 }
 #choose{
@@ -54,6 +55,9 @@ html, body {
 .table .row{
   text-align: center;
   font-size: 1.5em;
+  border-bottom: 1px solid;
+
+  padding: 17px;
 }
 .add .row{
   text-align: center;
@@ -61,3 +65,34 @@ html, body {
 .type{
   font-size: 0.7em;
 }
+.table img {
+  font-size: 30px;
+  color: #FFF;
+}
+.checkbox {
+  position: absolute;
+  bottom: -42px;
+}
+.checked {
+  height: 32px;
+  width: 32px;
+  border: 2px solid;
+  border-radius: 10px;
+  position: relative;
+  margin: auto 44px;
+}
+.hash {
+  position: absolute;
+  margin: -8px -10px;
+  font-size: 1.8em;
+  opacity: 0;
+}
+
+.hash:hover{
+  opacity: 1;
+}
+.add button{
+  float: right;
+}
+
+
