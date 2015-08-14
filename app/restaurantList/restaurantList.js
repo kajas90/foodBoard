@@ -44,9 +44,11 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
     isFirstDisabled: false
   };
 
-      $scope.routeToAdd=function(){
-        $location.path('/restaurantAdd');
-      }
+  $scope.routeToAdd=function(){
+    $location.path('/restaurantAdd');
+  };
+
+
 
 
 

@@ -9,7 +9,7 @@ angular.module('myApp', [
   'myApp.restaurantList',
   'myApp.myTimer',
   'myApp.restaurantAdd',
-  'myApp.version'
+  'myApp.version',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/restaurantList'});
