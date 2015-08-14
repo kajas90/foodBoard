@@ -6,9 +6,10 @@ var myApp3 = angular.module('myApp.restaurantAdd', ['ngRoute'])
   $routeProvider.when('/restaurantAdd', {
     templateUrl: 'restaurantAdd/restaurantAdd.html',
     controller: 'restaurantAddCtrl'
-  }).when('/login', {
-      templateUrl : '/app/login/login.html'
-  });
+  })
+  //    .when('/login', {
+  //    templateUrl : '/app/login/login.html'
+  //});
 }])
 
 .controller('restaurantAddCtrl',  function MyController($scope) {
@@ -17,6 +18,10 @@ var myApp3 = angular.module('myApp.restaurantAdd', ['ngRoute'])
            "Azjatyckie"];
        $scope.wybrana = "";
 
+
+        $scope.routeToList=function(){
+            $location.path('/restaurantList');
+        };
    });
 
 

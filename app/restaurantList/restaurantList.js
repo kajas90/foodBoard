@@ -48,5 +48,4 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
     $location.path('/restaurantAdd');
   };
 
-
 });
