@@ -67,11 +67,11 @@
 
 
 
-/*.ng-enter           { animation: fadeIn 0.5s both ease-in; z-index: 8888; }*/
-/*.ng-leave           { animation: fadeOut 0.2s both ease-in; z-index: 9999; }*/
+.ng-enter           { animation: fadeIn 0.7s both ease-in; z-index: 8888; }
+.ng-leave           { animation: fadeOut 0.2s both ease-in; z-index: 9999; }
 
 
-.ng-enter           { animation: slideInLeft 0.5s both ease-in; z-index: 8888; }
-.ng-leave           { animation: slideOutRight 0.5s both ease-in; z-index: 9999; }
+/*.ng-enter           { animation: slideInLeft 0.5s both ease-in; z-index: 8888; }*/
+/*.ng-leave           { animation: slideOutRight 0.5s both ease-in; z-index: 9999; }*/
 
 
