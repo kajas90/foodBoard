@@ -21,7 +21,6 @@
 .type{
     font-size: 0.7em;
 }
-
 .table img {
     font-size: 30px;
     color: #FFF;
@@ -56,13 +55,10 @@
 .accordionContent{
     color: #000;
 }
-<<<<<<< Updated upstream
 .btn:focus, .btn:active:focus, .btn.active:focus{
     outline:none;
     box-shadow:none;
 }
-=======
 .table accordion{
     background: none;
 }
->>>>>>> Stashed changes
