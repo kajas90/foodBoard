@@ -46,9 +46,13 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
 
   $scope.routeToAdd=function(){
     $location.path('/restaurantAdd');
+<<<<<<< Updated upstream
   };
 
 
+//=======
+//  }
+//>>>>>>> Stashed changes
 
 
 

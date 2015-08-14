@@ -6,6 +6,8 @@ var myApp3 = angular.module('myApp.restaurantAdd', ['ngRoute'])
   $routeProvider.when('/restaurantAdd', {
     templateUrl: 'restaurantAdd/restaurantAdd.html',
     controller: 'restaurantAddCtrl'
+  }).when('/login', {
+      templateUrl : '/app/login/login.html'
   });
 }])
 

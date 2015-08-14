@@ -9,8 +9,10 @@ angular.module('myApp.myTimer', ['ngRoute','timer'])
   });
 }])
 
-.controller('myTimerCtrl', [function($rootScope, $scope, $location, $routeParams) {
+.controller('myTimerCtrl', [function() {
     
   
 
 }]);
+
+
