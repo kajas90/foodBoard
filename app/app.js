@@ -3,6 +3,7 @@
 angular.module('myApp', [
   'ngRoute',
   'ngAnimate',
+  'timer',
   'ui.bootstrap',
   'myApp.login',
   'myApp.restaurantList',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.myTimer', ['ngRoute'])
+angular.module('myApp.myTimer', ['ngRoute','timer'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/myTimer', {
@@ -9,6 +9,8 @@ angular.module('myApp.myTimer', ['ngRoute'])
   });
 }])
 
-.controller('myTimerCtrl', [function() {
+.controller('myTimerCtrl', [function($rootScope, $scope, $location, $routeParams) {
+    
+  
 
 }]);
