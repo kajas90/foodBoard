@@ -8,7 +8,7 @@
     position: absolute;
     bottom: 0.5em;
 }
-#timer{
+#timer {
     right: 0;
     position: absolute;
     bottom: 0.5em;
@@ -97,6 +97,7 @@
 .animate-enter.animate-enter-active {
     opacity: 1;
 }
+
 /*bg remove and borders ,from list rows*/
 .panel, .panel-heading, .panel-default, .panel-group, .panel-default>.panel-heading , h4.panel-title{
     background-color: transparent;
@@ -108,6 +109,7 @@
     border-top: none;
 
 }
+
 .panel-default>.panel-heading+.panel-collapse>.panel-body{
     border: none;
 }

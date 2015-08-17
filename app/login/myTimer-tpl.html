@@ -1,0 +1,21 @@
+    <div ng-transclude></div>
+
+    <link rel="stylesheet" href="/app/myTimer/myTimer.css">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12  myTimerClock">
+                <timer countdown="3600" max-time-unit="'minute'" interval="1000">0{{hours}}:{{mminutes}}:{{sseconds}}</timer>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12  myTimerText">
+                <p>to close restaurant choosing</p>
+            </div>
+
+        </div>
+
+    </div>

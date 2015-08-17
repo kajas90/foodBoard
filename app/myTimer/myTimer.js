@@ -9,10 +9,12 @@ angular.module('myApp.myTimer', ['ngRoute','timer'])
   });
 }])
 
-.controller('myTimerCtrl', [function() {
-    
-  
+ .controller('myTimerCtrl', [function() {
 
-}]);
+  }]);
+
+
+
+
 
 
