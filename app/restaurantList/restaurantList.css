@@ -73,3 +73,8 @@
 .animate-enter.animate-enter-active {
     opacity: 1;
 }
+
+.panel, .panel-heading, .panel-default, .panel-group, .panel-default>.panel-heading , h4.panel-title{
+    background-color: transparent;
+    background-image: none;
+}
