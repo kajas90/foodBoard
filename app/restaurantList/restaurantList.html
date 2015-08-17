@@ -10,7 +10,6 @@
         </div>
     </div>
 </div>
-
 <div class="blok" ng-controller="restaurantListCtrl">
     <div class="table">
         <accordion close-others="oneAtATime">
@@ -20,7 +19,9 @@
                         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">{{group.type}}</div>
+
                         <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs">
+
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
                             <div class="checkbox">
@@ -29,8 +30,8 @@
                             </div>
                         </div>
                     </div>
-                </accordion-heading>
 
+                   </accordion-heading>
                 <div class="accordionContent"> {{group.content}} </div>
 
             </accordion-group>
