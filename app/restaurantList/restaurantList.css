@@ -1,11 +1,17 @@
 .header{
     height:10em;
     position: relative;
-    border-bottom: 1px solid;
+    width: 90%;
+    margin: 0 auto;
 }
 #choose{
     position: absolute;
     bottom: 0.5em;
+}
+.table{
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
 }
 .table .row{
     text-align: center;
@@ -40,6 +46,10 @@
 }
 .hash:hover{
     opacity: 1;
+}
+.add{
+    width: 90%;
+    margin:auto;
 }
 .add button{
     float: right;
