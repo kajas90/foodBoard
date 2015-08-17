@@ -1,44 +1,27 @@
-<div class="login" ng-controller="LoginController">
-  <div class="span2" ng-click="showText()">{{variable}}  </div>
+<link rel="stylesheet" href="login/login.css">
 
-  <p>
-    <button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
-    <button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
-  </p>
+<div class="container">
+  <div class="row">
+    <form novalidate ng-controller="restaurantAddCtrl">
 
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" ng-model="oneAtATime">
-      Open only one at a time
-    </label>
+      <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
+      <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="row">
+          <h1 id ="h1Log">Panel logowania</h1>
+        </div>
+        <div class="row">
+          <input type="text" id="login" placeholder="login" />
+        </div>
+        <div class="row">
+          <input type="text" id="password" placeholder="password" />
+        </div>
+        <div class="row">
+          <a href="#" class="btn btn-default btnLogin" >Login</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
+    </form>
   </div>
-
-  <accordion close-others="oneAtATime">
-    <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-      This content is straight in the template.
-    </accordion-group>
-    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-      {{group.content}}
-    </accordion-group>
-    <accordion-group heading="Dynamic Body Content">
-      <p>The body of the accordion group grows to fit the contents</p>
-        <button type="button" class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
-        <div ng-repeat="item in items">{{item}}</div>
-    </accordion-group>
-    <accordion-group is-open="status.open">
-        <accordion-heading>
-            I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-        </accordion-heading>
-        This is just some content to illustrate fancy headings.
-    </accordion-group>
-  </accordion>
-
-  <!-- page-add.html -->
-  <h1>Animating Pages Is Fun</h1>
-  <h2>About</h2>
-
-  <a href="#" class="btn btn-primary btn-lg">Home</a>
-  <a href="#contact" class="btn btn-danger btn-lg">Contact</a>
-  <a href="#about" class="btn btn-success btn-lg">About</a>
-
 </div>
+

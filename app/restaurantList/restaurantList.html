@@ -3,22 +3,25 @@
 <div class="header">
     <div class="row">
         <div id="choose" class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><h1>Choose Restaurant</h1></div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+        <div id="timer" class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+            <a href="#/myTimer"><timer countdown="3601" max-time-unit="'minute'" interval="1000">
+                0{{hours}}:{{mminutes}}:{{sseconds}}</timer></a>
 
         </div>
     </div>
 </div>
 
 <div class="blok" ng-controller="restaurantListCtrl">
-    <div class="table"  >
+    <div class="table">
         <accordion close-others="oneAtATime">
-            <accordion-group ng-repeat="group in groups">
-                <accordion-heading >
-                    <div class="row" >
+            <accordion-group ng-repeat="group in groups" is-disabled="false" is-open="status-open">
+                <accordion-heading>
+                    <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">{{group.type}}</div>
-                        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs">
+                        </div>
                         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
                             <div class="checkbox">
                                 <div class="checked"></div>
