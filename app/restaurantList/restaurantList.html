@@ -10,10 +10,10 @@
 </div>
 
 <div class="blok" ng-controller="restaurantListCtrl">
-    <div class="table" ng-repeat="group in groups">
+    <div class="table"  >
         <accordion close-others="oneAtATime">
-            <accordion-group>
-                <accordion-heading>
+            <accordion-group ng-repeat="group in groups">
+                <accordion-heading >
                     <div class="row" >
                         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
                         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
