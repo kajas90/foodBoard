@@ -2,7 +2,7 @@
     /*background-color: violet;*/
     width: 100% ;
 }
-.myTimerClock {
+.myTimerClock{
     /* background-color: blue; */
     font-size: 4rem;
     text-align: right;
@@ -10,7 +10,7 @@
      line-height: 4rem;
      margin-top: 1rem;
 }
-.myTimerText {
+.myTimerText{
     /* background-color: cornflowerblue; */
     font-size: 1.2rem;
     text-align: right;

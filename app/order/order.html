@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="login/login.css">
+<link rel="stylesheet" href="order/order.css">
 
 <div class="container">
   <div class="row">
@@ -6,16 +6,16 @@
       <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
       <div class="col-lg-6 col-md-6 col-sm-6 ">
         <div class="row">
-          <h1 id ="h1Log">Panel logowania</h1>
+          <h1 id ="h1Log">Zamówienie</h1>
         </div>
         <div class="row">
-          <input type="text" id="login" placeholder="login" />
+          <textarea rows=4 id="order" placeholder="zamowienie"> </textarea>
         </div>
         <div class="row">
-          <input type="text" id="password" placeholder="password" />
+          <input type="number" id="sum" placeholder="cena" min="0"/>
         </div>
         <div class="row">
-          <a href="#" class="btn btn-default btnLogin" >Login</a>
+          <a href="#" class="btn btn-default btnLogin" >Zamów</a>
         </div>
 
       </div>
@@ -26,4 +26,4 @@
 
   <!--<html ng-app="components">-->
   <!--<script type="text/javascript" src="//code.angularjs.org/1.3.6/angular.js"></script>-->
-  <script src="login.js"></script>
+  <script src="order.js"></script>

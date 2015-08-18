@@ -8,7 +8,7 @@ var myApp3 = angular.module('myApp.restaurantAdd', ['ngRoute'])
     controller: 'restaurantAddCtrl'
   })
   //    .when('/login', {
-  //    templateUrl : '/app/login/login.html'
+  //    templateUrl : '/app/login/order.html'
   //});
 }])
 

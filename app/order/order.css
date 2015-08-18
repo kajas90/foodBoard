@@ -1,0 +1,61 @@
+.container {
+    margin: auto auto;
+}
+textarea, input, .btn:focus, .btn:active:focus, .btn.active:focus{
+
+    outline:none;
+    box-shadow:none;
+}
+input{
+    color:#000;
+}
+input:focus{
+    color:#000;
+}
+#h1Log{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+
+}
+#order, #sum{
+    width: 100%;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #000;
+    background-color: #FFF;
+    margin-bottom: 3rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.btnLogin{
+    float: right;
+    line-height: 5rem;
+    font-size: 2rem;
+    border-radius: 0;
+}
+
+
+::-webkit-input-placeholder {
+    color: #A9A9A9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #A9A9A9;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #A9A9A9;
+}
+
+:-ms-input-placeholder {
+    color: #A9A9A9;
+}
+
+@media only screen and (max-width: 768px) {
+    #h1Add{
+        margin-top: 2rem;
+    }
+}
+
+

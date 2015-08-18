@@ -9,27 +9,28 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
   });
 }])
 
-.controller('restaurantListCtrl', ['$scope', '$http', '$rootScope', '$location', '$routeParams', function($scope, $http, $rootScope, $location, $routeParams) {
+.controller('restaurantListCtrl', ['$scope', '$http', '$rootScope', '$location', '$routeParams',
+        function($scope, $http, $rootScope, $location, $routeParams) {
 
-      $http.get('js/data.json').success(function(data) {
+        $http.get('js/data.json').success(function (data) {
 
-          $scope.groups = data;
+            $scope.groups = data;
 
-          console.log('poprawnie pobrano dane z js/data.json');
-      });
-      $http.get('js/data.json').error(function(data) {
+            console.log('poprawnie pobrano dane z js/data.json');
+        });
+        $http.get('js/data.json').error(function (data) {
 
-          console.log('nie zaladowano js/data.json');
-      });
-      
-
-
-  $scope.oneAtATime = true;  //accordion
+            console.log('nie zaladowano js/data.json');
+        });
 
 
-  $scope.routeToAdd=function(){
-    $location.path('/restaurantAdd');
-  };
+        $scope.oneAtATime = true;  //accordion
+
+
+        $scope.routeToAdd = function () {
+            $location.path('/restaurantAdd');
+        };
+
 
 
         //--sort -- justCHECKING
@@ -40,6 +41,7 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
 
 
 }])
+
 
 
     //doklejanie tpl
