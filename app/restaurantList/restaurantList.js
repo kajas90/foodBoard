@@ -31,6 +31,14 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
     $location.path('/restaurantAdd');
   };
 
+
+        //--sort -- justCHECKING
+        $scope.selectAction = function() {
+            console.log($scope.searchType);
+            console.log('zmiana w searchType: '+$scope.searchType.type);
+        };
+
+
 }])
 
 

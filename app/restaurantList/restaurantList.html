@@ -1,50 +1,58 @@
 <link rel="stylesheet" href="restaurantList/restaurantList.css">
-<!--//dodawanie -tpl-->
-<script src="login.js"></script>
 
-<div class="header">
-    <div class="row">
-        <div id="choose" class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><h1>Choose Restaurant</h1></div>
-        <div id="timer" class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-            <a href="#/myTimer"><contactform><span></span></contactform></a>
+<div ng-controller="restaurantListCtrl">
 
+    <div class="header">
+        <div class="row">
+            <div id="choose" class="col-lg-6 col-md-6 col-sm-6 col-xs-5">
+                <h1>Choose Restaurant</h1>
+                <input type="text" ng-model="searchName" placeholder="--wyszukaj restauracje--" />
+                <select ng-change="selectAction()" ng-model="searchType" ng-options="group.type as group.type for group in groups | unique: 'type' "  ><option>-- choose type --</option></select>
+            </div>
+            <div id="timer" class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+                <!--//dodawanie -tpl-->
+                <a href="#/myTimer"><contactform><span></span></contactform></a>
+
+            </div>
         </div>
     </div>
-</div>
-<div class="blok" ng-controller="restaurantListCtrl">
-    <div class="table">
-        <accordion close-others="oneAtATime">
-            <accordion-group ng-repeat="group in groups" is-disabled="false" is-open="status-open">
-                <accordion-heading>
-                    <div class="row">
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
-                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
-                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">{{group.type}}</div>
+    <div class="blok" >
+        <div class="table">
+            <accordion close-others="oneAtATime">
+                <accordion-group ng-repeat="group in groups | filter: {name: searchName} | filter: searchType | orderBy: 'name' " is-disabled="false" is-open="status-open">
+                    <accordion-heading>
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">{{group.name}}</div>
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 type">{{group.type}}</div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs">
+                            <div class="col-lg-6 col-md-6 col-sm-2 hidden-xs">
 
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                            <div class="checkbox">
-                                <div class="checked"></div>
-                                <div class="glyphicon glyphicon-ok hash"></div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                                <div class="checkbox">
+                                    <div class="checked"></div>
+                                    <div class="glyphicon glyphicon-ok hash"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                   </accordion-heading>
-                <div class="accordionContent"> {{group.content}} </div>
+                       </accordion-heading>
+                    <div class="accordionContent"> {{group.content}} </div>
 
-            </accordion-group>
-        </accordion>
+                </accordion-group>
+            </accordion>
+        </div>
+
+    </div>
+
+    <div class="add">
+        <button type="button" class="btn btn-lg btn-default" ng-click="routeToAdd()" >add new restaurant</button>
     </div>
 
 </div>
 
-<div class="add">
-    <button type="button" class="btn btn-lg btn-default" ng-click="routeToAdd()" >add new restaurant</button>
-</div>
-
+<!--//dodawanie -tpl-->
 <link rel="stylesheet" href="restaurantList/restaurantList_MyTimer.css">
 
 
