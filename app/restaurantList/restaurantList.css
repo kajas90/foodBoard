@@ -1,19 +1,19 @@
 .header{
-    height:10em;
+    /*height:10em;   height comes from content height*/
     position: relative;
     width: 90%;
     margin: 0 auto;
 }
 #choose{
-    position: absolute;
-    bottom: 0.5em;
+    /*position: absolute;*/
+    /*bottom: 0.5em;*/
 }
 #timer {
-    right: 0;
-    position: absolute;
-    bottom: 0.5em;
-    font-size: 4em;
-    text-align: right;
+    /*right: 0;*/
+    /*position: absolute;*/
+    /*bottom: 0.5em;*/
+    /*font-size: 4em;*/
+    /*text-align: right;*/
 }
 .header a {
     color:#fff;
@@ -87,16 +87,16 @@
     background: none;
 }
 
-/*animatation between views*/
-.animate-enter {
-    -webkit-transition: 1s linear all; /* Chrome */
-    transition: 1s linear all;
-    opacity: 0;
-}
+/*OLDanimatation between views*/
+/*.animate-enter {*/
+    /*-webkit-transition: 1s linear all; /!* Chrome *!/*/
+    /*transition: 1s linear all;*/
+    /*opacity: 0;*/
+/*}*/
 
-.animate-enter.animate-enter-active {
-    opacity: 1;
-}
+/*.animate-enter.animate-enter-active {*/
+    /*opacity: 1;*/
+/*}*/
 
 /*bg remove and borders ,from list rows*/
 .panel, .panel-heading, .panel-default, .panel-group, .panel-default>.panel-heading , h4.panel-title{
@@ -114,6 +114,3 @@
     border: none;
 }
 
-.timer-tpl{
-    background-color: yellow;
-}
