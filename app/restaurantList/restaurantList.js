@@ -40,7 +40,7 @@ angular.module('myApp.restaurantList', ['ngRoute','ui.bootstrap'])
         return {
             restrict: 'E',
             transclude: true,
-            templateUrl: '/app/login/myTimer-tpl.html',
+            templateUrl: '/app/myTimer/myTimer-tpl.html',
             controller: function () {
                 console.log('jestem w dyrektywie contactform');
             }
