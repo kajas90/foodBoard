@@ -6,8 +6,12 @@
         <div class="row">
             <div id="choose" class="col-lg-6 col-md-6 col-sm-6 col-xs-5">
                 <h1>Choose Restaurant</h1>
-                <input type="text" ng-model="searchName" placeholder="-wyszukaj restauracje-" />
-                <select ng-change="selectAction()" ng-model="searchType" ng-options="group.type as group.type for group in groups | unique: 'type' "  ><option>-- choose type --</option></select>
+               <div id="searchName">
+                   <input type="text"  ng-model="searchName" placeholder="--choose restaurant--" />
+               </div>
+                <div id="searchType">
+                    <select ng-change="selectAction()" ng-model="searchType"  ng-options="group.type as group.type for group in groups | unique: 'type' "  ><option value="">-- choose type --</option></select>
+                </div>
             </div>
             <div id="timer" class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
                 <!--//dodawanie -tpl-->
@@ -18,7 +22,7 @@
     <div class="blok" >
         <div class="table">
             <accordion close-others="oneAtATime">
-                <accordion-group ng-repeat="group in groups | filter: {name: searchName} | filter: searchType | orderBy: 'name' ">
+                <accordion-group ng-repeat="group in groups | filter: {name: searchName} | filter: searchType | orderBy: 'name' " >
                     <accordion-heading>
                         <div class="row">
                             <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">{{group.logo}}</div>
